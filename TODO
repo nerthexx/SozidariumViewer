@@ -14,7 +14,7 @@ Right now, for speeds, we sample an 'area' of these layers.
 However, a better approach would be to just sample 1 block at some worldposition. We could construct different lods based on that. 
 Also, an optimization for that would be to reuse higher lod data to construct lower lod data (reuse of pixels, basically). Also, could just cache pixels.
 Also, construct all lod levels at current view. Even the ones we don't see. Why? So, right now, when we zoom, there is a delay between the lod switch, resulting in "flicker"-like effect.
-To combat that, we would need to use a quadtree, or some other data structure. Zooming-in should give more details over time, without deleting what we previously generated. 
+To combat that, we could also just use a quadtree, or some other data structure. Zooming-in should give more details over time, without deleting what we previously generated. 
 
 - Add player icons to their bases.
 
